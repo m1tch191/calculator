@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <div  id="weight">
+                <h3>Weight per Foot</h3>
+                <input type="number" id="wpf" value=0>
+            </div>
+            <div  id="length">
+                <h3>Length</h3>
+                <input type="number" id="len" value=1>
+            </div>
+            <div  id="quantity">
+                <h3>Qty</h3>
+                <input type="number" id="qty" value=1>
+            </div>
+
+            <div id="buttons">
+                <button id="add-line" onclick="addLine()">Add Line</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+
+            <p id="part-list"></p>
+            <p id="total"></p>
+            <p id="warnings">ORDER IS OVER 150 LBS</p>
+
+        </div>
+
+        <script src="converter.js"></script>
+    </body>
+</html>

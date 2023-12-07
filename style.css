@@ -1,0 +1,41 @@
+body * {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+body, input, button {
+    background-color: rgb(51,51,51);
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 1em;
+    justify-items: center;
+}
+
+#container * {
+    grid-column-start: 2;
+    margin: 5px;
+    text-align: center;
+}
+
+#part-list {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 6
+}
+
+#total {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#warnings {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 2em;
+}
